@@ -1,5 +1,7 @@
-rgname = "terraform0709"
+rgname = "terraformpg"
 rglocation = "eastus"
 prefix = "Devops"
 vnet_cidr_prefix = "10.10.0.0/16"
 subnet1_cidr_prefix = "10.10.1.0/24"
+storagergname = "pg-resource-group"
+storageaccountname = "terrformstgpg"

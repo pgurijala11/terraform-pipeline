@@ -3,6 +3,15 @@ variable "rgname"{
     description = "used for naming resource group"
 }
 
+variable "storagergname"{
+    type = string
+    description = "used for naming storge resource group"
+}
+
+variable "storageaccountname"{
+    type = string
+    description = "used for naming storageaccountname"
+}
 variable "rglocation"{
     type = string
     description = "used for selecting the location"
