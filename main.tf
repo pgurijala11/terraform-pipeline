@@ -7,6 +7,15 @@ terraform {
   }
 }
 
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "${var.storagergname}"
+    storage_account_name = "${var.storageaccountname}"
+    container_name       = "tfstate"
+    key                  = "__stgaccesskey__"
+  }
+}
+
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}  
