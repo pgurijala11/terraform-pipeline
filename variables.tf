@@ -1,34 +1,25 @@
-variable "rgname"{
-    type = string
-    description = "used for naming resource group"
+variable "rgname" {
+  type        = string
+  description = "used for naming resource group"
 }
 
-variable "storagergname"{
-    type = string
-    description = "used for naming storge resource group"
+variable "rglocation" {
+  type        = string
+  description = "used for selecting the location"
+  default     = "eastus"
 }
 
-variable "storageaccountname"{
-    type = string
-    description = "used for naming storageaccountname"
-}
-variable "rglocation"{
-    type = string
-    description = "used for selecting the location"
-    default = "eastus"    
-}
-
-variable "prefix"{
-    type = string
-    description = "used to definea standard prefix for all resource"
+variable "prefix" {
+  type        = string
+  description = "used to definea standard prefix for all resource"
 }
 
 variable "vnet_cidr_prefix" {
-  type = string
+  type        = string
   description = "This variable defines address space for vnet"
 }
 
-variable "subnet1_cidr_prefix" {
-  type = string
-  description = "This variable defines address space for subnetnet"
+variable "subnet_cidr_prefix" {
+  type        = list(any)
+  description = "This variable defines address space for subnetnets"
 }
