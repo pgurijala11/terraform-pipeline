@@ -24,15 +24,15 @@ terraform {
 provider "azurerm" {
   features {}
 
-  #subscription_id = "__subscriptionid__"
-  #client_id       = "__clientid__"
-  #client_secret   = "__clientsecret_"
-  #tenant_id       = "__tenantid__"
+  subscription_id = "__subscriptionid__"
+  client_id       = "__clientid__"
+  client_secret   = "__clientsecret_"
+  tenant_id       = "__tenantid__"
 
-  client_id       = "3db4ee92-abca-4697-8c36-963f312a03aa"
-  tenant_id       = "3ad1301e-0b3b-448a-a29a-44059243af15"
-  subscription_id = "df12aecd-0a40-4dff-b31f-725027247ff7"
-  client_secret   = "z3K8Q~m_c5Vlg4nx3SbJumN0GNSdc1UWN5E7BaxV"
+  # client_id       = "3db4ee92-abca-4697-8c36-963f312a03aa"
+  # tenant_id       = "3ad1301e-0b3b-448a-a29a-44059243af15"
+  # subscription_id = "df12aecd-0a40-4dff-b31f-725027247ff7"
+  # client_secret   = "z3K8Q~m_c5Vlg4nx3SbJumN0GNSdc1UWN5E7BaxV"
 }
 
 resource "azurerm_resource_group" "rg" {
